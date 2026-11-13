@@ -1,0 +1,20 @@
+Pregunta 1: ¿Qué está sucediendo visualmente cuando mantienes el clic sobre una card? ¿Qué propiedad o selector CSS crees que lo provoca?
+Respuesta: Al mantener el clic presionado sobre una tarjeta (card), esta experimenta un cambio de estado visual (normalmente asociado al selector :active), ejecutando una animación de escala, elevación o desplazamiento. Está provocado por las propiedades de transición o animación combinadas con pseudo-clases interactivas en CSS.
+
+Pregunta 2: ¿Qué cambió en el comportamiento de las cards al recargar la página?
+Respuesta: Al aplicar la animación directamente en la clase .card, el efecto visual de entrada (slit-in-diagonal-2) se ejecuta automáticamente y de forma simultánea en todas las tarjetas justo en el instante en que la página termina de cargar en el navegador.
+
+Pregunta 3: ¿Qué 3 selectores elegiste? Describe brevemente qué hace cada uno y cómo se comportó la animación al usarlo.
+Respuesta:
+1. :hover - Se activa únicamente al pasar el cursor por encima de la tarjeta. La animación solo ocurre cuando el usuario interactúa visualmente acercando el ratón.
+2. :active - Se activa exclusivamente en el momento exacto en que se hace clic y se mantiene presionado el botón sobre el elemento.
+3. :focus - Se activa cuando la tarjeta recibe el foco (por ejemplo, al seleccionarla mediante el teclado con la tecla Tab). La animación se dispara al enfocar el elemento de forma accesible.
+
+Pregunta 4: ¿Para qué sirve un @keyframes en CSS? Explícalo con tus propias palabras.
+Respuesta: El bloque @keyframes sirve para definir de forma detallada la estructura y los pasos intermedios de una animación CSS. Permite establecer qué propiedades y valores debe tener el elemento desde el inicio (0% o 'from') hasta el final (100% or 'to'), controlando cada cambio de transformación a lo largo del tiempo.
+
+Pregunta 5: Elige 3 propiedades de las animaciones que usaste y explica qué hace cada una.
+Respuesta:
+* animation-duration - Define el tiempo exacto que tarda la animación en completar un ciclo completo (por ejemplo, 450ms o 5s).
+* animation-timing-function - Establece la curva de velocidad de la animación, permitiendo que comience lento, acelere o sea lineal (como linear o ease-out).
+* transform - Permite modificar geométricamente los elementos; se pueden aplicar traslaciones, rotaciones, escalados o sesgados de acuerdo con los valores establecidos.
